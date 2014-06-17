@@ -7,9 +7,11 @@
 //
 
 #import "RMMViewController.h"
+#import "Movies.h"
+#import "RMMTableViewController.h"
 
-@interface RMMViewController ()
-
+@interface RMMViewController () <APINetworkDeletegate>
+@property (nonatomic, strong) Movies *movies;
 @end
 
 @implementation RMMViewController
@@ -17,13 +19,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.movies = [[Movies alloc] init];
+    self.movies.deletegate = self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)downloadPopularMovies:(id)sender {
+     [self.movies downloadPopularMovies];
+}
+
+#pragma mark - APINetworkDelegate
+-(void)finishDownloadPopularMovies:(NSArray *)movies {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    RMMTableViewController *tableVC = (RMMTableViewController *)[storyboard instantiateViewControllerWithIdentifier:@"RMMTableViewController"];
+    tableVC.movies = movies;
+    [self presentViewController:tableVC animated:YES completion:nil];
 }
 
 @end

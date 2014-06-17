@@ -22,6 +22,9 @@
 		8C8929491950B642009520F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C8929471950B642009520F3 /* InfoPlist.strings */; };
 		8C89294B1950B642009520F3 /* MoviePlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C89294A1950B642009520F3 /* MoviePlayTests.m */; };
 		8CAE82A01950B8EA007A3B41 /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE829F1950B8EA007A3B41 /* Movies.m */; };
+		8CAE82A31950C456007A3B41 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE82A21950C456007A3B41 /* Movie.m */; };
+		8CAE82A61950CD5E007A3B41 /* RMMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE82A51950CD5E007A3B41 /* RMMTableViewController.m */; };
+		8CAE82A91950D962007A3B41 /* RMMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE82A81950D962007A3B41 /* RMMDetailViewController.m */; };
 		BEE2BDE9B6204879A0A4E1B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5314DB7AF2B45308738A802 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,12 @@
 		8C89294A1950B642009520F3 /* MoviePlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePlayTests.m; sourceTree = "<group>"; };
 		8CAE829E1950B8EA007A3B41 /* Movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
 		8CAE829F1950B8EA007A3B41 /* Movies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movies.m; sourceTree = "<group>"; };
+		8CAE82A11950C456007A3B41 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		8CAE82A21950C456007A3B41 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		8CAE82A41950CD5E007A3B41 /* RMMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMTableViewController.h; sourceTree = "<group>"; };
+		8CAE82A51950CD5E007A3B41 /* RMMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMTableViewController.m; sourceTree = "<group>"; };
+		8CAE82A71950D962007A3B41 /* RMMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMDetailViewController.h; sourceTree = "<group>"; };
+		8CAE82A81950D962007A3B41 /* RMMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMDetailViewController.m; sourceTree = "<group>"; };
 		B7F1EED480EF4FFC9BBDEAAC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C5314DB7AF2B45308738A802 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +174,8 @@
 			children = (
 				8CAE829E1950B8EA007A3B41 /* Movies.h */,
 				8CAE829F1950B8EA007A3B41 /* Movies.m */,
+				8CAE82A11950C456007A3B41 /* Movie.h */,
+				8CAE82A21950C456007A3B41 /* Movie.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,6 +186,10 @@
 				8C8929311950B642009520F3 /* Main.storyboard */,
 				8C8929341950B642009520F3 /* RMMViewController.h */,
 				8C8929351950B642009520F3 /* RMMViewController.m */,
+				8CAE82A41950CD5E007A3B41 /* RMMTableViewController.h */,
+				8CAE82A51950CD5E007A3B41 /* RMMTableViewController.m */,
+				8CAE82A71950D962007A3B41 /* RMMDetailViewController.h */,
+				8CAE82A81950D962007A3B41 /* RMMDetailViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -314,6 +329,9 @@
 			files = (
 				8C89292C1950B642009520F3 /* main.m in Sources */,
 				8C8929361950B642009520F3 /* RMMViewController.m in Sources */,
+				8CAE82A61950CD5E007A3B41 /* RMMTableViewController.m in Sources */,
+				8CAE82A31950C456007A3B41 /* Movie.m in Sources */,
+				8CAE82A91950D962007A3B41 /* RMMDetailViewController.m in Sources */,
 				8CAE82A01950B8EA007A3B41 /* Movies.m in Sources */,
 				8C8929301950B642009520F3 /* RMMAppDelegate.m in Sources */,
 			);
