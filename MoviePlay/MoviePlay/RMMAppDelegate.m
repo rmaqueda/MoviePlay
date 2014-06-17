@@ -7,12 +7,17 @@
 //
 
 #import "RMMAppDelegate.h"
+#import "Movies.h"
+
 
 @implementation RMMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    Movies *movies = [[Movies alloc] init];
+    [movies popularMovies];
+    
     return YES;
 }
 							
